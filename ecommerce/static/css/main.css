@@ -100,6 +100,16 @@ h1,h2,h3,h4,h5,h6{
     border: 1px solid #0047a4;
     color:#0047a4
 }
+.btn-info{
+    color:#ffffff;
+	background-color: #0047a4;
+    border: 1px solid #0047a4;
+}
+.btn-info:hover{
+    border: 1px solid #0047a4;
+    background-color: #0047a4;
+    color: #ffffff
+}
 .btn-outline-c-info:hover{
     border: 1px solid #0047a4;
     background-color: #0047a4;
