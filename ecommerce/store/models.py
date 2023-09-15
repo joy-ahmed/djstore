@@ -27,9 +27,18 @@ class Product(models.Model):
     digital = models.BooleanField(default=False, null=True, blank=False)
     description = models.TextField(null=True, blank=True)
     categories = models.ManyToManyField(Category)
+    images = models.ImageField(null=True, blank=True)
 
     def __str__(self):
         return self.name
+    
+    @property
+    def imageURL(self):
+        try:
+            url = self.images.url
+        except:
+            url = ''
+        return url
 
 
 class Order(models.Model):
